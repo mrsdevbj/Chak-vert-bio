@@ -1,0 +1,350 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #e8f5e9 0%, #f6fff6 100%);
+    min-height: 100vh;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Header */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: darkgreen;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header .menu li a:hover {
+    color: yellow;
+}
+
+.burger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: darkgreen;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+    .burger {
+        display: block;
+    }
+    .menu.active {
+        display: flex;
+    }
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('2f846d2e6c6e480f53b797cc67b9b3e8.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* espace entre h1, texte, bouton */
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Services */
+.services {
+    padding: 60px 0;
+    background: #f6fff6;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #228B22;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(34,139,34,0.15);
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(34,139,34,0.25);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    color: #228B22;
+    margin-bottom: 10px;
+}
+
+.card h3 span {
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+.card p {
+    color: #444;
+    font-size: 1em;
+}
+
+/* Autres activités */
+.autres-activites {
+    padding: 60px 0;
+    background: #f6fff6;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(34,139,34,0.10);
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.autres-activites h2 {
+    color: #228B22;
+    font-size: 2.3em;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.autre-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 36px;
+    justify-items: center;
+}
+
+.autre-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(34,139,34,0.10);
+    padding: 18px 12px 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.autre-card:hover {
+    box-shadow: 0 8px 32px rgba(34,139,34,0.18);
+    transform: scale(1.03);
+}
+
+.autre-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(34,139,34,0.10);
+    margin-bottom: 16px;
+}
+
+.autre-card h3 {
+    color: #228B22;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.autre-card p {
+    color: #444;
+    font-size: 1.08em;
+    margin: 0;
+}
+
+/* Chef */
+.chef {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chef h2 {
+    color: darkgreen;
+    margin-bottom: 40px;
+}
+
+.chef-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.chef-profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid darkgreen;
+}
+
+.chef-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: darkgreen;
+}
+
+.chef-info p {
+    font-size: 1.1em;
+    max-width: 400px;
+}
+
+/* Contact */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.contact button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Galerie / Lightbox */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.gallery img {
+    width: 350px;
+    height: 350px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(34,139,34,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 32px rgba(34,139,34,0.25);
+}

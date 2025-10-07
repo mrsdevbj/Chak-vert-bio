@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAK-VERT-BIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CHAK-VERT-BIO</div>
+      <ul class="menu">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#services">Nos Domaines</a></li>
+        <li><a href="#le-pdg">Le PDG</a></li>
+        <li><a href="#passer-une-commande">Passer une commande</a></li>
+      </ul>
+      <div class="burger">&#9776;</div>
+      <p>📞 Contactez-nous : +229 01 41 80 53 52 / 01 67 55 63 54</p>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+  <div class="hero-bg-slider"></div>
+  <div class="hero-content">
+    <h1 style="font-size:3rem;color:#fff;text-shadow:0 2px 12px #228B22;">Bienvenue chez CHAK-VERT-BIO</h1>
+    <p style="color:#fff; font-size:1.2em; margin:20px 0; text-shadow:0 2px 6px rgba(0,0,0,0.5);">
+      CHAK VERT BIO, votre satisfaction, notre mission. Optez pour la qualité de nos services.
+    </p>
+    <a href="#services" class="btn" style="background:#228B22;color:#fff;font-size:1.2em;padding:14px 38px;border-radius:24px;box-shadow:0 2px 12px #228B22;margin-top:20px;">
+      Découvrez nos services
+    </a>
+  </div>
+</section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="apropos" style="background:#f6fff6;padding:48px 0 32px 0;">
+      <h2 style="color:#228B22;font-size:2.3em;margin-bottom:32px;">À propos de CHAK-VERT-BIO</h2>
+      <div class="apropos-content" style="display:flex;align-items:center;justify-content:center;gap:38px;flex-wrap:wrap;">
+        <!-- image d'origine -->
+        <img src="IMG-20250920-WA0001.jpg" alt="Photo du fondateur" class="apropos-img" style="width:350px;height:350px;border-radius:18px;object-fit:cover;box-shadow:0 8px 32px rgba(34,139,34,0.10);border:6px solid #e8f5e9;">
+        <div class="apropos-text" style="max-width:600px;font-size:1.15em;color:#333;background:#fff;border-radius:18px;box-shadow:0 2px 16px rgba(34,139,34,0.08);padding:24px 32px;">
+          <p>CHAK-VERT-BIO est une entreprise agricole spécialisée dans la promotion des produits bios . Depuis sa création, nous nous engageons à offrir des produits sains, frais et respectueux de l’environnement.</p>
+          <p>Notre mission est de promouvoir les differentes techniques de production; de sensibiliser et d'accompagner les producteurs locaux dans la proction bio, que ce soit dans le domaine de l'agriculture, l'élevage, la pêche et la transformation alimentaire afin de proposer aux produits sains. Grâce à des méthodes biologiques et respectueuses de la nature, nous transformons nos produits pour vous proposer le meilleur de la ferme à votre assiette.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services" style="background:#fffde4;padding:48px 0 32px 0;">
+      <h2 style="color:#228B22;font-size:2.3em;margin-bottom:32px;">Nos Domaines</h2>
+      <div class="service-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;justify-items:center;">
+        <div class="card" data-domain="agriculture" style="background:#fff;border-radius:24px;box-shadow:0 4px 16px rgba(34,139,34,0.10);padding:18px 12px 24px 12px;display:flex;flex-direction:column;align-items:center;transition:box-shadow 0.3s,transform 0.3s;">
+          <a href="agriculture.html"><img src="65b2ca7b70cf565f9b0fa0863b6fa428.jpg" alt="Champ d’agriculture bio" class="zoom-img domain-img" style="width:180px;height:180px;object-fit:cover;border-radius:18px;box-shadow:0 2px 8px rgba(34,139,34,0.10);margin-bottom:16px;"></a>
+          <h3 style="color:#228B22;font-size:1.2em;margin-bottom:10px;"><span>🌱</span>Agriculture</h3>
+          <p style="color:#444;font-size:1.08em;margin:0;">Production de légumes, fruits et céréales bio.</p>
+        </div>
+
+        <div class="card" data-domain="elevage" style="background:#fff;border-radius:24px;box-shadow:0 4px 16px rgba(34,139,34,0.10);padding:18px 12px 24px 12px;display:flex;flex-direction:column;align-items:center;transition:box-shadow 0.3s,transform 0.3s;">
+          <a href="élevage.html"><img src="IMG-20250930-WA0000.jpg" alt="Élevage bio" class="zoom-img domain-img" style="width:180px;height:180px;object-fit:cover;border-radius:18px;box-shadow:0 2px 8px rgba(34,139,34,0.10);margin-bottom:16px;"></a>
+          <h3 style="color:#228B22;font-size:1.2em;margin-bottom:10px;"><span>🐔</span>Élevage</h3>
+          <p style="color:#444;font-size:1.08em;margin:0;">Élevage de poulets et pintades bio.</p>
+        </div>
+
+        <div class="card" data-domain="pisciculture" style="background:#fff;border-radius:24px;box-shadow:0 4px 16px rgba(34,139,34,0.10);padding:18px 12px 24px 12px;display:flex;flex-direction:column;align-items:center;transition:box-shadow 0.3s,transform 0.3s;">
+          <a href="pisciculture.html"><img src="IMG-20250930-WA0002.jpg" alt="Pisciculture bio" class="zoom-img domain-img" style="width:180px;height:180px;object-fit:cover;border-radius:18px;box-shadow:0 2px 8px rgba(34,139,34,0.10);margin-bottom:16px;"></a>
+          <h3 style="color:#228B22;font-size:1.2em;margin-bottom:10px;"><span>🐟</span>Pisciculture</h3>
+          <p style="color:#444;font-size:1.08em;margin:0;">Élevage de poissons bio.</p>
+        </div>
+
+        <div class="card" data-domain="transformation" style="background:#fff;border-radius:24px;box-shadow:0 4px 16px rgba(34,139,34,0.10);padding:18px 12px 24px 12px;display:flex;flex-direction:column;align-items:center;transition:box-shadow 0.3s,transform 0.3s;">
+          <a href="transformation.html"><img src="a6c574c79724ea42fe5d808b00ec4659.jpg" alt="Transformation alimentaire bio" class="zoom-img domain-img" style="width:180px;height:180px;object-fit:cover;border-radius:18px;box-shadow:0 2px 8px rgba(34,139,34,0.10);margin-bottom:16px;"></a>
+          <h3 style="color:#228B22;font-size:1.2em;margin-bottom:10px;"><span>🍲</span>Transformation</h3>
+          <p style="color:#444;font-size:1.08em;margin:0;">Transformation de produits agricoles bio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTRES ACTIVITÉS -->
+    <section id="autres-activites" class="autres-activites" style="background:#f6fff6;padding:48px 0 32px 0;">
+      <h2 style="color:#228B22;font-size:2.3em;margin-bottom:32px;">Autres Activités</h2>
+      <div class="autre-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;justify-items:center;">
+        <div class="autre-card" style="background:#fff;border-radius:24px;box-shadow:0 4px 16px rgba(34,139,34,0.10);padding:18px 12px 24px 12px;display:flex;flex-direction:column;align-items:center;transition:box-shadow 0.3s,transform 0.3s;">
+          <img src="IMG-20250930-WA0001.jpg" alt="Photo activité" class="autre-img" style="width:180px;height:180px;object-fit:cover;border-radius:18px;box-shadow:0 2px 8px rgba(34,139,34,0.10);margin-bottom:16px;">
+          <h3 style="color:#228B22;font-size:1.2em;margin-bottom:10px;">Communication événementielle</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- LE PDG -->
+   <section id="le-pdg" class="pdg" style="background:#fffde4;padding:48px 0 32px 0;text-align:center;">
+  <h2 style="color:#228B22;font-size:2.3em;margin-bottom:32px;">Le PDG</h2>
+  <img src="IMG-20251001-WA0004.jpg" alt="Chef Chak Vert Bio" style="max-width:600px; width:100%; height:auto; border-radius:18px; box-shadow:0 8px 32px rgba(34,139,34,0.10); border:6px solid #e8f5e9; margin-bottom:18px; display:block; margin-left:auto; margin-right:auto;">
+  <h3 class="chef-nom" style="font-size:1.25em;margin:12px 0 8px 0;font-weight:600;color:#228B22;letter-spacing:1px;">Nom du PDG : <span style="color:#228B22;">Chakirou Bolarinwa OSSE</span></h3>
+  <p style="font-size:1.1em;color:#333;">Notre PDG passionné du développement de l'espace verte, met en valeur les produits bio et sains.</p>
+</section>
+
+    <!-- CONTACT / PASSER UNE COMMANDE -->
+    <section id="passer-une-commande" class="contact" style="background:#f6fff6;padding:48px 0 32px 0;">
+      <h2 style="color:#228B22;font-size:2.3em;margin-bottom:32px;">Passer une commande</h2>
+
+     <form action="https://formsubmit.co/chakvertbio@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="merci.html">
+  <input type="hidden" name="_captcha" value="false">
+
+  <label for="nom">Votre nom</label>
+  <input type="text" name="nom" required>
+
+  <label for="email">Votre e-mail</label>
+  <input type="email" name="email" required>
+
+  <label for="telephone">Téléphone</label>
+  <input type="text" name="telephone">
+
+  <label for="message">Votre message</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
+      <div id="confirmation-message" style="display:none;color:green;text-align:center;font-size:1.1em;margin-top:18px;">
+        Merci, votre email a été bien envoyé. Nous le traitons et vous contacterons rapidement.
+      </div>
+
+      <div class="localisation" style="margin-top:32px;">
+        <h3 style="color:#228B22;">Localisation de l'entreprise</h3>
+        <iframe src="https://www.google.com/maps?q=Porto-Novo+Danto+les+palmiers&output=embed" width="100%" height="300"
+          style="border:0;border-radius:18px;box-shadow:0 4px 16px rgba(34,139,34,0.12);margin-top:18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="ou-nous-trouver" style="margin-top:18px;">
+          <h4 style="color:#228B22;">Où nous trouver ?</h4>
+          <p>Nous sommes situés à Porto-Novo, quartier Danto, les palmiers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#228B22;color:#fff;padding:32px 0;text-align:center;">
+    <p><strong>Localisation :</strong> Danto, les palmiers<br>
+    <strong>Téléphone :</strong> +229 01 41 80 53 52 / 01 67 55 63 54</p>
+    <p>&copy; 2025 CHAK-VERT-BIO. Tous droits réservés.</p>
+  </footer>
+
+  <script src="Scripte.js"></script>
+</body>
+</html>
